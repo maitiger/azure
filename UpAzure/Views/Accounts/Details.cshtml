@@ -1,0 +1,66 @@
+﻿@model UpAzure.Models.Account
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Account</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model._name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model._email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model._user)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._user)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model._pass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._pass)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model._sail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._sail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdateAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model._id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
